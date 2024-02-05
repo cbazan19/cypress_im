@@ -1,0 +1,31 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "html-report-smoke-version": "cypress run --spec cypress/e2e/abbaco_smoke_version.cy.js --browser chrome --headed",
+    "lighthouse": "cypress run --spec cypress/e2e/lighthouse.cy.js --browser chrome --headed",
+    "lighthouse-analizar": "cypress run --spec cypress/e2e/lighthouse_analizar.cy.js --browser chrome --headed",
+    "kavak": "cypress run --spec cypress/e2e/kavak.cy.js --browser chrome --headed",
+    "html-report-smoke-prod": "cypress run --spec cypress/e2e/abbaco_smoke_prod.cy.js --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "nodemailer": "^6.9.7",
+    "save-dev": "^0.0.1-security"
+  },
+  "description": "",
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@playwright/test": "^1.36.2",
+    "cypress": "^13.5.0",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0"
+  }
+  
+}
